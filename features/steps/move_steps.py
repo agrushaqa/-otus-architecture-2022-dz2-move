@@ -1,5 +1,5 @@
 from behave import given, when, then
-from src.move1 import Move
+from src.move import Move
 
 
 @given('Тело находится в точке ({x}, {y}) пространства')
