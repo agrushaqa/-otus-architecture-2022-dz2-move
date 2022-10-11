@@ -30,11 +30,8 @@ jobs:
         python -m pip install allure-behave
         python -m pip install mock
         python -m pip install numpy
-
-
-  test:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Test with behave
+    - name: Run tests with behave
       run: |
         python -m behave ./features
+
+        
