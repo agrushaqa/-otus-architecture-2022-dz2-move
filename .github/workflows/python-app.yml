@@ -61,9 +61,8 @@ jobs:
         PUBLISH_DIR: allure-history
     - name: Print github variables
       run: |
-                  echo "GITHUB_RUN_ID: ${GITHUB_RUN_ID}"
                   echo "GITHUB_RUN_NUMBER: ${GITHUB_RUN_NUMBER}"
-                  echo "GITHUB_ACTION: ${GITHUB_ACTION}"
+                  echo "Deploying to production server on branch $GITHUB_REF"
     - name: Post the link to the allure report
       if: always()
       uses: Sibz/github-status-action@v1
