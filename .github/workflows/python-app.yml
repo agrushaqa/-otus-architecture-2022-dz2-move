@@ -67,6 +67,7 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{ github.event.pull_request.head.sha || github.sha}}
+          target_url: agrushaqa.github.io/-otus-architecture-2022-dz2-move/allure-html-reporter-github-pages/${{ github.run_number }}
 
 
       
