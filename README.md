@@ -52,7 +52,7 @@
 Слева был треугольник run test
 ### CLI
     python -m behave ./features
-## c allure 
+## c созданием allure отчёта
 в папке move запускаем:
 
     python -m behave -f allure_behave.formatter:AllureFormatter -o report ./features
