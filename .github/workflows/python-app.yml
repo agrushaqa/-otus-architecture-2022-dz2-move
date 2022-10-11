@@ -59,6 +59,10 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-history
+    - name: Generate build number
+      uses: einaregilsson/build-number@v3
+      with:
+        token: ${{secrets.GITHUB_TOKEN}}   
     - name: Print github variables
       run: |
                   echo "BUILD_NUMBER is $BUILD_NUMBER"
