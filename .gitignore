@@ -2,3 +2,4 @@ docs
 report
 allure-report
 __pycache__
+.mypy_cache

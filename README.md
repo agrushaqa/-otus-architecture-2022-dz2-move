@@ -55,8 +55,7 @@
 ## c allure 
 в папке move запускаем:
 
-    python -m behave -f allure_behave.formatter:AllureFormatter -o 'D:\Projects\otus\python\code\src\otus.architecture_2022\move\report' ./features
-
+    python -m behave -f allure_behave.formatter:AllureFormatter -o report ./features
 
 # Конфигурирование:
 Установить python 3.11
@@ -95,9 +94,9 @@ python -m behave -h
 
 
 # Allure
-allure generate -c "D:\Projects\otus\python\code\src\otus.architecture_2022\move\report" -o "D:\Projects\otus\python\code\src\otus.architecture_2022\move\allure-report"
+allure generate -c report -o allure-report
 
-allure open .\allure-report\ 
+allure open allure-report
 
 https://stackoverflow.com/questions/49267027/how-to-allure-behave-generate-report-from-test-cases-allure-generated-only-one
 
