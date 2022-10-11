@@ -51,6 +51,7 @@
 Слева был треугольник run test
 ## c allure 
 в папке move запускаем:
+
     python -m behave -f allure_behave.formatter:AllureFormatter -o 'D:\Projects\otus\python\code\src\otus.architecture_2022\move\report' ./features
 
 
