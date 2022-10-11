@@ -59,6 +59,11 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-history
+    - name: Print github variables
+      run: |
+                  echo "GITHUB_RUN_ID: ${GITHUB_RUN_ID}"
+                  echo "GITHUB_RUN_NUMBER: ${GITHUB_RUN_NUMBER}"
+                  echo "GITHUB_ACTION: ${GITHUB_ACTION}"
     - name: Post the link to the allure report
       if: always()
       uses: Sibz/github-status-action@v1
@@ -68,11 +73,7 @@ jobs:
           state: 'success'
           sha: ${{ github.event.pull_request.head.sha || github.sha}}
           target_url: agrushaqa.github.io/-otus-architecture-2022-dz2-move/${GITHUB_RUN_NUMBER}
-    - name: Print github variables
-      run: |
-                  echo "GITHUB_RUN_ID: ${GITHUB_RUN_ID}"
-                  echo "GITHUB_RUN_NUMBER: ${GITHUB_RUN_NUMBER}"
-                  echo "GITHUB_ACTION: ${GITHUB_ACTION}"
+
 
 
       
