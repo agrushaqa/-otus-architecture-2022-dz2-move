@@ -68,7 +68,6 @@ jobs:
           state: 'success'
           sha: ${{ github.event.pull_request.head.sha || github.sha}}
           target_url: PavanMudigonda.github.io/allure-html-reporter-github-pages/${{ github.run_number }}
-          ref: gh-pages
-          path: gh-pages
+
 
       
