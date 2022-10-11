@@ -100,4 +100,3 @@ allure generate -c "D:\Projects\otus\python\code\src\otus.architecture_2022\move
 allure open .\allure-report\ 
 
 https://stackoverflow.com/questions/49267027/how-to-allure-behave-generate-report-from-test-cases-allure-generated-only-one
-
