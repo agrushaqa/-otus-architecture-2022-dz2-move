@@ -101,3 +101,16 @@ allure open .\allure-report\
 
 https://stackoverflow.com/questions/49267027/how-to-allure-behave-generate-report-from-test-cases-allure-generated-only-one
 
+# code style
+## isort
+python -m pip install isort
+### run 
+isort .
+## mypy
+python -m pip install mypy
+### run 
+mypy .
+## flake8
+python -m pip install flake8
+### run
+flake8

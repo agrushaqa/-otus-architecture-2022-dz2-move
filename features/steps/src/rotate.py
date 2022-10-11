@@ -17,8 +17,10 @@ class Rotable(ABC):
 
 
 class Rotate:
-    def __init__(self, r:Rotable):
+    def __init__(self, r: Rotable):
         self.r = r
 
     def execute(self):
-        self.r.set_direction(self.r.get_direction() + self.r.get_angular_velocity() % self.r.get_directions_number())
+        self.r.set_direction(self.r.get_direction() +
+                             self.r.get_angular_velocity() %
+                             self.r.get_directions_number())

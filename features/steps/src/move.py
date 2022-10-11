@@ -20,4 +20,5 @@ class Move:
         self.m = m
 
     def execute(self):
-        self.m.set_position(self.m.add(self.m.get_position(), self.m.get_velocity()))
+        self.m.set_position(self.m.add(self.m.get_position(),
+                                       self.m.get_velocity()))

@@ -1,7 +1,8 @@
 # before every scenario
 from unittest.mock import MagicMock
-from steps.src.move import Movable
+
 import numpy as np
+from steps.src.move import Movable
 
 
 class MockPosition:
@@ -25,4 +26,3 @@ def before_feature(context, feature):
     context.mock.add = mock_add
     context.mock.set_position = mock_position.set_position
     context.mock.get_position = mock_position.get_position
-

@@ -1,4 +1,4 @@
-from behave import given, when, then
+from behave import given, then, when
 from src.move import Move
 
 
@@ -30,7 +30,9 @@ def when_the_body_moves(context):
 def it_is_impossible_to_change_position_of_the_body(context):
     context.exception = None
     try:
-        raise ValueError('невозможно установить новое положение тела в пространстве')
+        raise ValueError(
+            'невозможно установить новое положение тела в пространстве'
+        )
     except Exception as e:
         context.exception = e
 
@@ -51,4 +53,5 @@ def when_it_it_unable_to_get_velocity_value(context):
 
 @then('операция MoveCommand прерывается выбросом исключения {exception_type}')
 def then_thee_movement_of_the_body_is_not_possible(context, exception_type):
-    assert isinstance(context.exception, eval(exception_type)), "Invalid exception - expected " + exception_type
+    assert isinstance(context.exception, eval(exception_type)),\
+        "Invalid exception - expected " + exception_type
