@@ -33,6 +33,11 @@ jobs:
     - name: Run tests with behave
       run: |
         python -m behave -f allure_behave.formatter:AllureFormatter -o report ./features
+    - name: Install Allure
+      run: |
+        sudo apt-add-repository ppa:qameta/allure
+        sudo apt-get update 
+        sudo apt-get install allure
     - uses: simple-elf/allure-report-action@master
       if: always()
       id: allure-report
