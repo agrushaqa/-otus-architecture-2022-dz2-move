@@ -61,6 +61,7 @@ jobs:
         PUBLISH_DIR: allure-history
     - name: Print github variables
       run: |
+                  echo "BUILD_NUMBER is $BUILD_NUMBER"
                   echo "GITHUB_RUN_NUMBER: ${GITHUB_RUN_NUMBER}"
                   echo "Deploying to production server on branch $GITHUB_REF"
     - name: Post the link to the allure report
