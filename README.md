@@ -92,7 +92,6 @@ https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-win
 
 python -m behave -h
 
-
 # Allure
 allure generate -c report -o allure-report
 
