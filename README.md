@@ -112,3 +112,8 @@ mypy .
 python -m pip install flake8
 ### run
 flake8
+## code coverage
+pip install coverage
+### run
+coverage run C:\Users\agrusha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\behave\__main__.py
+в файле .coveragerc нужно указать исходники
